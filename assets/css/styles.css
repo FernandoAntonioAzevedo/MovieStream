@@ -1,0 +1,131 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat:wght@100..900&family=Play:wght@400;700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --first-color: hsl(351, 91%, 53%);
+  --second-color: hsl(55, 100%, 50%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 71%);
+  --body-color: hsl(0, 0%, 0%);
+  --container-color: hsl(0, 15%, 6%);
+  --input-color: hsl(0, 0%, 6%);
+  --border-color: hsla(0, 0%, 100%, 0.15);
+
+  /*========== Font family ==========*/
+  --body-font: 'Play', sans-serif;
+  --second-font: 'Montserrat', sans-serif;
+  --third-font: 'Montez', cursive;
+
+  /*========== Font sizes ==========*/
+  --big-font-size: 5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.5rem;
+  --largest-font-size: 1.375rem;
+  --larger-font-size: 1.25rem;
+  --large-font-size: 1.125rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.8125rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-bold: 700;
+  --font-extra-bold: 800;
+}
+
+/* Responsive typography */
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea,
+button {
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  font-weight: var(--font-bold);
+  background-color: var(--body-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*=============== LAYOUT ===============*/
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+/*=============== HEADER & NAV ===============*/
+
+/* Search form */
+
+/* Scroll header */
+
+/*=============== HOME ===============*/
+
+/* Swiper */
+
+/*=============== TRENDING MOVIES ===============*/
+
+/*=============== SUBSCRIPTION ===============*/
+
+/*=============== TOP RATED MOVIES ===============*/
+
+/*=============== FOOTER ===============*/
+
+/*=============== BREADCRUMB ===============*/
+
+/*=============== MOVIES PAGE ===============*/
+
+/*=============== MOVIES DETAIL PAGE ===============*/
+
+/*=============== SIGN IN PAGE ===============*/
+
+/*=============== CONTACT PAGE ===============*/
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+
+/* For medium devices */
+
+/* For small devices */
