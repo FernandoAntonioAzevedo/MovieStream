@@ -92,8 +92,16 @@ img {
 }
 
 /*=============== LAYOUT ===============*/
+.container {
+  max-width: 1440px;  
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+  padding-block: 7.5rem;
+}
 
 /*=============== HEADER & NAV ===============*/
 
@@ -102,6 +110,24 @@ img {
 /* Scroll header */
 
 /*=============== HOME ===============*/
+.home-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -10;
+}
+
+.home-data {
+  padding-block: 11rem 4rem;
+}
+
+.home-title {
+  font-family: var(--second-font);
+  font-size: var(--big-font-size);
+  font-weight: var(--font-extra-bold);
+  text-transform: ;
+}
 
 /* Swiper */
 
