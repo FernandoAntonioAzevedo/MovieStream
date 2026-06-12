@@ -126,7 +126,97 @@ img {
   font-family: var(--second-font);
   font-size: var(--big-font-size);
   font-weight: var(--font-extra-bold);
-  text-transform: ;
+  text-transform: uppercase;
+  line-height: 1.1;
+  max-width: 835px;
+  margin-block: 1rem 2rem;
+}
+
+.home-title span {
+  font-family: var(--third-font);
+  font-weight: var(--font-regular);
+}
+
+.home-tags,
+.home-reviews,
+.home-list {
+  display: flex;
+}
+
+.home-tags {
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.home-tag {
+  color: var(--text-color);
+  font-size: var(--smaller-font-size);
+  text-transform: uppercase;
+  background: hsla(0, 0%, 100%, 0.12);
+  backdrop-filter: blur(3px);
+  padding: 0.32rem 0.75rem;
+  border-radius: 0.125rem;
+  transition: background 0.3s ease, 
+  color 0.3s ease;
+}
+
+.home-tag:hover {
+  background-color: var(--first-color);
+  color: var(--title-color);
+}
+
+.home-reviews {
+  align-items: center;
+  column-gap: 0.4rem;
+}
+
+.home-reviews i {
+  color: hsl(30, 100%, 59%);
+}
+
+.home-reviews-count,
+.home-item {
+  font-size: var(--small-font-size);
+  text-transform: uppercase;
+}
+
+.home-reviews-count {
+  letter-spacing: 0.15em;
+  margin-left: 0.25rem;
+}
+
+.home-review-count span,
+.home-item a:hover {
+  color: var(--second-color);
+}
+
+.home-list {
+  column-gap: 1.5rem;
+  margin-block: 1.25rem 2.5rem;
+}
+
+.home-item {
+  position: relative;
+}
+
+.home-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: var(--border-color);
+}
+
+.home-item a {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.home-btns {
+  display: flex;
 }
 
 /* Swiper */
