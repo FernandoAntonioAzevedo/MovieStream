@@ -103,6 +103,35 @@ img {
   padding-block: 7.5rem;
 }
 
+.btn {
+  display: inline-flex;
+  background-color: var(--first-color);
+  color: var(--title-color);
+  padding: .875rem 1.75rem;
+  border-radius: 0.25rem;
+  transition: 
+    background 0.3s ease,
+    color 0.3s ease; 
+}
+
+.btn:hover {
+  background-color: var(--second-color);
+  color: var(--body-color);
+}
+
+.btn-flex {
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.btn-flex i {
+  font-size: var(--larger-font-size);
+}
+
+.btn-dark {
+  background-color: var(--body-color);
+}
+
 /*=============== HEADER & NAV ===============*/
 
 /* Search form */
@@ -217,6 +246,8 @@ img {
 
 .home-btns {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.25rem;
 }
 
 /* Swiper */
