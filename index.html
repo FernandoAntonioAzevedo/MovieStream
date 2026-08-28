@@ -23,7 +23,30 @@
   </head>
   <body>
     <!--=============== HEADER ===============-->
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html">
+          <img src="assets/img/logo.svg" alt="logo Movie Stream"  class="nav-logo">
+        </a>
 
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="movies.html" class="nav-link">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a href="sign-in.html" class="nav-link">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>            
+          </ul>
+        </div>
+      </nav>
+    </header>
     <!--=============== MAIN ===============-->    
     <main>
       <!--=============== HOME ===============-->
@@ -33,10 +56,18 @@
             <div class="swiper-slide home-slide section">
               <div 
                 class="home-bg" 
-                style="background-image: url(./assets/img/home-bg-1.jpg);">                
+                style="background-image: url(./assets/img/home-bg-1.jpg);"                
+                data-swiper-parallax-scale="1.15"
+                data-swiper-parallax-opacity="0.8"
+                >                
               </div>
 
-              <div class="home-data container">
+              <div 
+                class="home-data container"
+                data-swiper-parallax="-400"
+                data-swiper-parallax-scale="0.2"
+                data-swiper-parallax-opacity="0.9"
+              >
                 <div class="home-tags ">
                   <a href="#" class="home-tag">Action</a>
                   <a href="#" class="home-tag">Drama</a>
@@ -77,10 +108,15 @@
             <div class="swiper-slide home-slide section">
               <div 
                 class="home-bg" 
-                style="background-image: url(./assets/img/home-bg-2.jpg);">                
+                style="background-image: url(./assets/img/home-bg-2.jpg);"
+                data-swiper-parallax-scale="1.15"
+                data-swiper-parallax-opacity="0.8"
+                >                
               </div>
 
-              <div class="home-data container">
+              <div 
+                class="home-data container"
+              >
                 <div class="home-tags">
                   <a href="#" class="home-tag">Horror</a>
                   <a href="#" class="home-tag">Action</a>
@@ -122,10 +158,19 @@
             <div class="swiper-slide home-slide section">
               <div 
                 class="home-bg" 
-                style="background-image: url(./assets/img/home-bg-3.jpg);">                
+                style="background-image: url(./assets/img/home-bg-3.jpg);"
+                data-swiper-parallax-scale="1.15"
+                data-swiper-parallax-opacity="0.8"
+                >                
               </div>
 
-              <div class="home-data container">
+              <div 
+                class="home-data container"
+                data-swiper-parallax="-400"
+                data-swiper-parallax-scale="0.9"
+                data-swiper-parallax-opacity="0.2"
+              
+              >
                 <div class="home-tags">
                   <a href="#" class="home-tag">Action</a>
                   <a href="#" class="home-tag">Drama</a>
@@ -150,7 +195,7 @@
                 <ul class="home-list">
                   <li class="home-item">2025</li>
                   <li class="home-item">1h : 55m</li>
-                  <li class="home-item"><a href="#">Action</a></li>
+                  <li class="home-item"><a href="#">Sci-Fi</a></li>
                 </ul>
 
                 <div class="home-btns">
@@ -162,6 +207,8 @@
               </div>
             </div>
           </div>
+
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
@@ -185,6 +232,8 @@
     <script>
       var homeSwiper = new Swiper('.home-swiper', {
         loop: true,
+        parallax: true,
+        effect: 'fade',
         slidesPerView: 1,
         pagination: {
           el: '.swiper-pagination',
