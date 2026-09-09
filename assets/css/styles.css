@@ -98,6 +98,11 @@ img {
   padding-inline: 1.25rem;
 }
 
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding-block: 7.5rem;
@@ -130,6 +135,17 @@ img {
 
 .btn-dark {
   background-color: var(--body-color);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+  margin-bottom: 2.75rem;
+}
+
+.section-title {
+  font-size: var(--h2-font-size);
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -389,6 +405,103 @@ img {
 }
 
 /*=============== TRENDING MOVIES ===============*/
+.movie-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.75rem;
+}
+
+.movie-tag-item {
+  color: var(--text-color);
+  text-transform: uppercase;
+  background: hsla(0, 0%, 100%, 0.12);
+  backdrop-filter: blur(3px);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+  transition: 
+    background 0.3s ease, 
+    color 0.3s ease;
+}
+
+.movie-tag-item:hover,
+.tag-active {
+  background-color: var(--first-color);
+  color: var(--title-color);
+}
+
+.movie-container {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.movie-img {
+  overflow: hidden;
+  display: block;
+  border-radius: 0.25rem;
+}
+
+.movie-img img {
+  transition: scale 0.3s ease;
+}
+
+.movie-card:hover img {
+  scale: 1.12;
+}
+
+.movie-title {
+  font-size: var(--largest-font-size);
+  margin-block: 1.375rem 0.75rem;
+}
+
+.movie-title a {
+  color: var(--title-color);
+}
+
+.movie-title a,
+.movie-tag a {
+  transition: color 0.3s ease;
+}
+
+.movie-title:hover a,
+.movie-tag:hover a,
+.movie-rating span {
+  color: var(--second-color);
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1.5rem;
+}
+
+.movie-list li {
+  font-size: var(--small-font-size);  
+}
+
+.movie-date {
+  position: relative;
+}
+
+.movie-date::after {
+  content:'';
+}
+
+.movie-tag {
+  margin-right: auto;
+}
+
+.movie-tag a {
+  color: hsl(253, 91%, 79%);
+}
+
+.movie-rating i {
+  color: hsl(30, 100%, 59%);
+  margin-right: 0.25rem;
+}
+
+
+
 
 /*=============== SUBSCRIPTION ===============*/
 
