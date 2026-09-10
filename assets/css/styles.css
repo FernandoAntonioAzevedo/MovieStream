@@ -485,6 +485,12 @@ img {
 
 .movie-date::after {
   content:'';
+  width: 1px;
+  height: 12px;
+  background-color: var(--border-color);
+  position: absolute;
+  right: -0.75rem;
+  top: 3px;
 }
 
 .movie-tag {
@@ -504,6 +510,56 @@ img {
 
 
 /*=============== SUBSCRIPTION ===============*/
+.subscription {
+  background-color: var(--container-color);
+}
+
+.subscription,
+.subscription-card,
+.subscription-img {
+  border-radius: 0.5rem;
+}
+
+.subscription-container {
+  max-width: 1308px;
+}
+
+.subscription-grid {
+  grid-template-columns: repeat(4, 1fr); 
+}
+
+.subscription-card {
+  padding: 0.75rem;
+  background: hsla(0, 0%, 100%, 0.1);
+  text-align: center;
+}
+
+.subscription-title {
+  color: var(--text-color);
+  font-size: var(--large-font-size);
+  margin-block: 1.75rem 0.75rem;
+}
+
+.subscription-price {
+  font-size: var(--h1-font-size);
+}
+
+.subscription-price span {
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+}
+
+.subscription-list {
+  row-gap: 1rem;
+  border-top: 1px dashed var(--border-color);
+  padding-top: 1.5rem;
+  margin-block: 1.5rem;
+}
+
+.subscription-btn {
+  display: flex;
+  justify-content: center;
+}
 
 /*=============== TOP RATED MOVIES ===============*/
 
