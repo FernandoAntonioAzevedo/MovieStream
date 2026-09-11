@@ -562,6 +562,52 @@ img {
 }
 
 /*=============== TOP RATED MOVIES ===============*/
+.movie-card {
+  position: relative;
+}
+
+.top-movie-content {
+  position: absolute;
+  inset: auto 0 0;
+  background-color: var(--input-color);
+  padding-block: 0.25rem 1.75rem;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 
+    opacity 0.3s ease, 
+    visibility 0.3s ease;
+}
+
+.movie-card:hover .top-movie-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.top-movie-content .movie-title {
+  font-size: var(--larger-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.top-movie-content .movie-rating {
+  background-color: var(--body-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: var(--small-font-size);
+}
+
+.top-movie-content :is(.movie-list, .movie-dating) {
+  width: max-content;
+  margin-inline: auto;
+}
+
+.top-movie-content .movie-list {
+  margin-top: 1rem;
+}
+
+.top-movie-content .movie-tag {
+  text-transform: uppercase;
+}
 
 /*=============== FOOTER ===============*/
 
