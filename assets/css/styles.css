@@ -610,8 +610,91 @@ img {
 }
 
 /*=============== FOOTER ===============*/
+.footer {
+  background-color: var(--container-color);  
+}
+
+.footer-container {
+  grid-template-columns: 4fr repeat(4, 2fr);  
+}
+
+.footer-desc {
+  font-weight: var(--font-regular);
+  max-width: 360px;
+  margin-block: 2rem;
+}
+
+.footer-socials {
+  display: flex;
+  column-gap: 0.625rem;  
+}
+
+.footer-social-link,
+.footer-link {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.footer-social-link:hover,
+.footer-link:hover,
+.footer-tel:hover {
+  color: var(--second-color);  
+} 
+
+.footer-social-link {
+  font-size: var(--large-font-size);
+}
+
+.footer-title {
+  font-size: var(--larger-font-size);
+  margin-bottom: 2rem;
+}
+
+.footer-links {
+  display: grid;
+  row-gap: 1rem;
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--border-color);
+}
+
+.footer-tel {
+  color: var(--title-color);
+  transition: color 0.3s ease;
+}
+
+.footer-tel + p {
+  line-height: 1.5;
+  margin-top: 0.375rem;
+}
+
+.footer-divider {
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6.25rem;
+}
+
+.footer-copy {
+  font-weight: var(--font-regular);
+}
+
+.footer-copy span {
+  color: var(--second-color);
+  font-weight: var(--font-bold);
+}
 
 /*=============== BREADCRUMB ===============*/
+.banner {
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 0.625rem 0.625rem;
+  position: relative;
+}
 
 /*=============== MOVIES PAGE ===============*/
 
