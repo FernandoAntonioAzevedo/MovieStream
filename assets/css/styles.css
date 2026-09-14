@@ -696,6 +696,56 @@ img {
   position: relative;
 }
 
+.banner::after {
+  content: '';
+  width: 635px;
+  height: 15px;
+  background-color: var(--body-color);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.banner .container {
+  padding-top: 4.5rem;
+}
+
+.banner-title {
+  font-family: var(--second-font);
+  font-size: var(--h2-font-size);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.75rem;
+}
+
+.breadcrumb-item {
+  font-size: var(--small-font-size);
+  text-transform: uppercase;
+}
+
+.breadcrumb-item,
+.breadcrumb-item a {
+  color: hsl(0, 0%, 87%);
+}
+
+.breadcrumb-active {
+  color: var(--second-color);
+}
+
+
+
+
 /*=============== MOVIES PAGE ===============*/
 
 /*=============== MOVIES DETAIL PAGE ===============*/
