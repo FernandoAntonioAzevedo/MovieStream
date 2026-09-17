@@ -751,6 +751,8 @@ img {
 /*=============== MOVIES DETAIL PAGE ===============*/
 .detail {
   grid-template-columns: 8fr 4fr;
+  align-items: start;
+  column-gap: 2.5rem;
 }
 
 .detail-video {
@@ -841,6 +843,85 @@ img {
   padding: 2rem;
   border-radius: 0.625rem;
 }
+
+.sidebar-title {
+  font-size: var(--larger-font-size);
+  margin-bottom: 1.75rem;
+}
+
+.sidebar-cards {
+  row-gap: 1.25rem;
+}
+
+.sidebar-card {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  column-gap: 1.25rem;
+}
+
+.sidebar-box {
+  border-radius: 0.25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.sidebar-box i {
+  font-size: 1.75rem;
+  color: var(--title-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 0.5rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.sidebar-box:hover i {
+  opacity: 1;
+  margin-top: 0;
+}
+
+.sidebar-box i:hover {
+  color: var(--first-color);
+}
+
+.sidebar-img {
+  width: 70px;  
+}
+
+.sidebar-subtitle {
+  color: var(--title-color);
+  font-size: var(--large-font-size);
+  transition: color 0.3s ease;
+}
+
+.sidebar-subtitle:hover {
+  color: var(--first-color);
+}
+
+.sidebar-list {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.movie-date,
+.sidebar-tag {
+  font-size: var(--small-font-size);
+}
+
+
+
+
+
+  
+  
+
+
+
 
 /*=============== SIGN IN PAGE ===============*/
 
