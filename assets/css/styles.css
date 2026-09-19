@@ -747,6 +747,17 @@ img {
 
 
 /*=============== MOVIES PAGE ===============*/
+.pagination,
+.page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination {
+  gap: 0.625rem;
+  margin-top: 4.5rem;
+}
 
 /*=============== MOVIES DETAIL PAGE ===============*/
 .detail {
