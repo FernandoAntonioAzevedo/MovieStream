@@ -744,8 +744,6 @@ img {
 }
 
 
-
-
 /*=============== MOVIES PAGE ===============*/
 .pagination,
 .page-link {
@@ -757,6 +755,21 @@ img {
 .pagination {
   gap: 0.625rem;
   margin-top: 4.5rem;
+}
+
+.page-link {
+  width: 50px;
+  aspect-ratio: 1/1;
+  color: var(--title-color);
+  background-color: var(--container-color);
+  border-radius: 0.25rem;
+  font-size: var(--large-font-size);
+  transition: background 0.3s ease;
+}
+
+.page-link:hover,
+.page-link.active {
+  background-color: var(--first-color);
 }
 
 /*=============== MOVIES DETAIL PAGE ===============*/
@@ -923,14 +936,6 @@ img {
 .sidebar-tag {
   font-size: var(--small-font-size);
 }
-
-
-
-
-
-  
-  
-
 
 
 
