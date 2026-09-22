@@ -938,8 +938,72 @@ img {
 }
 
 
-
 /*=============== SIGN IN PAGE ===============*/
+.sign-form {
+  background-color: var(--container-color);
+  max-width: 630px;
+  margin-inline: auto;
+  padding: 3rem;
+  border-radius: 0.625rem;
+}
+
+.sign-title,
+.sign-desc {
+  text-align: center;
+}
+
+.sign-title {
+  font-size: var(--larger-font-size);
+}
+
+.sign-desc {
+  font-weight: var(--font-regular);
+  margin-block: 0.625rem 1.75rem;
+}
+
+.sign-inputs {
+  row-gap: 1.25rem;
+}
+
+.sign-input {
+  background-color: var(--body-color);
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--body-color);
+  transition: border 0.3s ease;
+}
+
+.sign-input:focus {
+  border-color: var(--first-color);
+}
+
+.sign-confirm {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.sign-check {
+  width: 16px;
+  height: 16px;
+}
+
+.sign-label,
+.sign-link {
+  font-weight: var(--font-regular);
+}
+
+.sign-btn {
+  justify-content: center;
+  font-weight: var(--font-bold);
+  cursor: pointer;  
+}
+
+.sign-link a {
+  color: var(--first-color);
+}
 
 /*=============== CONTACT PAGE ===============*/
 
