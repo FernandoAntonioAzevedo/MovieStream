@@ -37,6 +37,21 @@
 }
 
 /* Responsive typography */
+@media screen and (max-witdh: 1181px) {
+  :root {
+  --big-font-size: 3rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.25rem;
+  --largest-font-size: 1.275rem;
+  --larger-font-size: 1.125rem;
+  --large-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  }
+  
+} 
 
 /*=============== BASE ===============*/
 * {
@@ -1086,7 +1101,51 @@ a.contact-data:hover {
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
+@media screen and (max-witdh: 1416px) {
+  .movie-container {
+    grid-template-columns: repeat(4fr, 1fr);
+  }
+} 
 
+@media screen and (max-width: 1181px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .section {
+    padding-block: 6.25rem;
+  }
+
+  .home-data {
+    padding-block: 8rem 0rem;
+  }
+
+  .home-title {
+    max-width: 540px;    
+  }
+
+  .swiper-pagination-bullet {
+    font-size: 1rem;
+  }
+
+  .movie-tag-item {
+    font-size: var(--small-font-size);
+    padding: .5rem 1rem;
+  }
+
+  .movie-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .subscription-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1.75rem;
+  }
+}
 /* For medium devices */
 
 /* For small devices */
